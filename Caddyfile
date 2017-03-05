@@ -1,4 +1,4 @@
-0.0.0.0:9022 {
+0.0.0.0:2015 {
     root /www/public
 
     # sync the repo and then gen public site
