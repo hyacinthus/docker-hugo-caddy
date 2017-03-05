@@ -1,0 +1,16 @@
+0.0.0.0:9022 {
+    root /hugo/public
+    basicauth /admin user password
+    hugo
+    git github.com/hyacinthus/blog {
+        path  /hugo
+        args  --recurse-submodules
+        then  hugo
+    }
+}
+
+browse
+
+log stdout
+
+errors stdout
