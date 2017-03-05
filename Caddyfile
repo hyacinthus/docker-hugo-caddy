@@ -1,16 +1,23 @@
 0.0.0.0:9022 {
-    root /hugo/public
-    basicauth /admin user password
-    hugo
-    git github.com/hyacinthus/blog {
-        path  /hugo
-        args  --recurse-submodules
-        then  hugo
+    root /www/public
+
+    # sync the repo and then gen public site
+    git {
+        repo github.com/hyacinthus/blog
+        path ../src
+        args --recurse-submodules
+        then hugo --destination=/www/public
     }
+
+    # hugo plugin, support an admin console
+    hugo
+
+    # hugo plugin admin auth
+    basicauth /admin user password
+
+    # write log to stdout for docker
+    log stdout
+    errors stdout
+
 }
 
-browse
-
-log stdout
-
-errors stdout
