@@ -29,5 +29,7 @@ WORKDIR /www
 
 COPY Caddyfile /etc/Caddyfile
 
+ENV REPO github.com/hyacinthus/blog
+
 ENTRYPOINT ["/usr/bin/caddy"]
 CMD ["--conf", "/etc/Caddyfile", "--log", "stdout"]

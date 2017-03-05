@@ -3,21 +3,14 @@
 
     # sync the repo and then gen public site
     git {
-        repo github.com/hyacinthus/blog
+        repo {$REPO}
         path ../src
         args --recurse-submodules
         then hugo --destination=/www/public
     }
 
-    # hugo plugin, support an admin console
-    hugo
-
-    # hugo plugin admin auth
-    basicauth /admin user password
-
     # write log to stdout for docker
     log stdout
     errors stdout
-
 }
 
