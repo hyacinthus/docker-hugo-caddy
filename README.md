@@ -1,5 +1,7 @@
 # caddy
 
+[![Build Status](https://semaphoreci.com/api/v1/muninn/docker-hugo-caddy/branches/master/badge.svg)](https://semaphoreci.com/muninn/docker-hugo-caddy)
+
 A [Docker](http://docker.com) image for [Caddy](http://caddyserver.com). This image includes the [git](http://caddyserver.com/docs/git) plugin.  Plugins can be configured via the `plugins` build arg.
 
 [![](https://images.microbadger.com/badges/image/abiosoft/caddy.svg)](https://microbadger.com/images/abiosoft/caddy "Get your own image badge on microbadger.com")
