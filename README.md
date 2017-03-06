@@ -1,15 +1,16 @@
-# caddy
+# Hugo with Caddy
+
+
+A [Docker](http://docker.com) image for Hugo with [Caddy](http://caddyserver.com) webserver. This image includes the [git](http://caddyserver.com/docs/git) plugin.  Plugins can be configured via the `plugins` build arg.
+
+[![](https://images.microbadger.com/badges/image/muninn/hugo-caddy.svg)](https://microbadger.com/images/muninn/hugo-caddy "Get your own image badge on microbadger.com")
 
 [![Build Status](https://semaphoreci.com/api/v1/muninn/docker-hugo-caddy/branches/master/badge.svg)](https://semaphoreci.com/muninn/docker-hugo-caddy)
-
-A [Docker](http://docker.com) image for [Caddy](http://caddyserver.com). This image includes the [git](http://caddyserver.com/docs/git) plugin.  Plugins can be configured via the `plugins` build arg.
-
-[![](https://images.microbadger.com/badges/image/abiosoft/caddy.svg)](https://microbadger.com/images/abiosoft/caddy "Get your own image badge on microbadger.com")
 
 ## Getting Started
 
 ```sh
-$ docker run -d -p 2015:2015 abiosoft/caddy
+$ docker run -d -p 2015:2015 muninn/hugo-caddy
 ```
 
 Point your browser to `http://127.0.0.1:2015`.
