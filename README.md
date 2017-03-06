@@ -5,7 +5,7 @@ A [Docker](http://docker.com) image for Hugo with [Caddy](http://caddyserver.com
 
 [![](https://images.microbadger.com/badges/image/muninn/hugo-caddy.svg)](https://microbadger.com/images/muninn/hugo-caddy "Get your own image badge on microbadger.com")
 
-[![Build Status](https://semaphoreci.com/api/v1/muninn/docker-hugo-caddy/branches/master/badge.svg)](https://semaphoreci.com/muninn/docker-hugo-caddy)
+[![Build Status](https://semaphoreci.com/api/v1/muninn/docker-hugo-caddy/branches/master/shields_badge.svg)](https://semaphoreci.com/muninn/docker-hugo-caddy)
 
 ## Getting Started
 
