@@ -4,7 +4,6 @@
 A [Docker](http://docker.com) image for Hugo with [Caddy](http://caddyserver.com) webserver. This image includes the [git](http://caddyserver.com/docs/git) plugin.  Plugins can be configured via the `plugins` build arg.
 
 [![](https://images.microbadger.com/badges/image/muninn/hugo-caddy.svg)](https://microbadger.com/images/muninn/hugo-caddy "Get your own image badge on microbadger.com")
-
 [![Build Status](https://semaphoreci.com/api/v1/muninn/docker-hugo-caddy/branches/master/shields_badge.svg)](https://semaphoreci.com/muninn/docker-hugo-caddy)
 
 ## Getting Started
@@ -26,7 +25,7 @@ $ docker run -d \
     -v $(pwd)/Caddyfile:/etc/Caddyfile \
     -v $HOME/.caddy:/root/.caddy \
     -p 80:80 -p 443:443 \
-    abiosoft/caddy
+    muninn/hugo-caddy
 ```
 
 
@@ -39,7 +38,7 @@ $ docker run -d \
     -e "CADDYPATH=/etc/caddycerts" \
     -v $HOME/.caddy:/etc/caddycerts \
     -p 80:80 -p 443:443 \
-    abiosoft/caddy
+    muninn/hugo-caddy
 ```
 
 Above, we utilize the `CADDYPATH` environment variable to define a different location inside the container for
@@ -60,7 +59,7 @@ $ printf "0.0.0.0\nroot src\ngit github.com/abiosoft/webtest" > Caddyfile
 ##### Run the image
 
 ```sh
-$ docker run -d -v $(pwd)/Caddyfile:/etc/Caddyfile -p 2015:2015 abiosoft/caddy
+$ docker run -d -v $(pwd)/Caddyfile:/etc/Caddyfile -p 2015:2015 muninn/hugo-caddy
 ```
 Point your browser to `http://127.0.0.1:2015`.
 
@@ -93,7 +92,7 @@ $ docker run -d \
     -v /path/to/sites/root:/srv \
     -v path/to/Caddyfile:/etc/Caddyfile \
     -p 2015:2015 \
-    abiosoft/caddy
+    muninn/hugo-caddy
 ```
 
 ### Let's Encrypt Auto SSL
@@ -114,5 +113,5 @@ You can change the the ports if ports 80 and 443 are not available on host. e.g.
 $ docker run -d \
     -v $(pwd)/Caddyfile:/etc/Caddyfile \
     -p 80:80 -p 443:443 \
-    abiosoft/caddy
+    muninn/hugo-caddy
 ```
