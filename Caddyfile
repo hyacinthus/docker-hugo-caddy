@@ -5,6 +5,7 @@
     git {
         repo {$REPO}
         path ../src
+        hook /webhook
         args --recurse-submodules
         then hugo --destination=/www/public
     }
