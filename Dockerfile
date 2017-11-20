@@ -4,7 +4,7 @@ MAINTAINER Hyacinthus <hyacinthus@gmail.com>
 LABEL caddy_version="0.9.5" architecture="amd64"
 
 ARG plugins=git
-ARG hugo_version=0.19
+ARG hugo_version=0.30.2
 
 RUN apk add --no-cache openssh-client git tar curl
 
