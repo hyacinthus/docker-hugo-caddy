@@ -17,4 +17,4 @@ WORKDIR /www
 
 COPY Caddyfile /etc/Caddyfile
 
-ENV REPO github.com/spf13/spf13
+ENV REPO github.com/spf13/spf13.com
