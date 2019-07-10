@@ -1,9 +1,9 @@
-version: '2'
+version: '3'
 services:
     hugo:
         image: muninn/hugo-caddy
         ports:
             - 2015:2015
         environment:
-            - REPO=github.com/hyacinthus/blog
+            - REPO=github.com/spf13/spf13.com
         restart: unless-stopped
