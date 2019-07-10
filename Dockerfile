@@ -1,7 +1,7 @@
 FROM abiosoft/caddy
 MAINTAINER Hyacinthus <hyacinthus@gmail.com>
 
-ARG hugo_version=0.50
+ARG hugo_version=0.55.6
 
 RUN apk add --no-cache openssh-client git tar curl
 
